@@ -5,5 +5,8 @@ app = Flask(__name__)
 def index():
     return render_template('maintenance.html')
 
+@app.route("/error")
+def error():
+    return "Error Page"
 if __name__ == '__main__':
     app.run()
